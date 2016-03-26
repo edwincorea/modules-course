@@ -1,0 +1,21 @@
+{
+  "name": "05-scripting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js",
+    "stop": "echo \"Stopping\"",
+    "restart": "echo \"Restarting\"",
+    "pregreeting": "echo \"Before Greeting\"",
+    "greeting": "echo \"Hello, World!\"",
+    "postgreeting": "echo \"After Greeting\"",
+    "lint": "jshint ./server.js --show-non-errors"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
+}

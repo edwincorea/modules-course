@@ -1,0 +1,16 @@
+{
+  "name": "example-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.6.1"  //major.minor.patch  
+                        //^: used for ranges on three components. Give me any version above or equal than 4.x.x
+                        //~: used for ranges on patches only. Fixed major and minor components. Give me any version above 4.6.x
+  }
+}

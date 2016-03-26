@@ -1,0 +1,18 @@
+//mixin or function, reusable css
+.top-radius(@radius) {
+    border-top-left-radius: @radius;
+    border-top-right-radius: @radius;
+}
+
+.inner-top-highlight(@base-color) {
+    border-left: 1px solid lighten(@base-color, 5%);
+    border-top: 1px solid lighten(@base-color, 5%);
+    border-right: 1px solid lighten(@base-color, 5%);        
+}
+
+//this is not a mixing, but in less we can reuse class selectors as if they were mixins (look at body.less)
+//but it's better to define it as a mixing... 
+.default-text() {
+    line-height: 1.6em;
+    margin-bottom: 10px;    
+}

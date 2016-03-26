@@ -1,0 +1,16 @@
+{
+  "name": "example-1",
+  "version": "1.0.0",
+  "description": "This is an example project",
+  "main": "server.js",
+  "author": "Edwin Corea",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.12.0",
+    "lodash": "3.10.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "peerDependencies": {}
+}
