@@ -1,0 +1,22 @@
+{
+  "name": "babel-example",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Edwin Corea Bonilla <edwin.corea@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/edwincorea/modules-course",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
