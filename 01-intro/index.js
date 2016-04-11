@@ -1,7 +1,7 @@
 //var calc = require("./calculator")
 var add = require("./calculator").add,    
     sub = require("./calculator").sub,
-    service = require("./services/service")
+    service = require("./services/service"),
     stuff = require("./services");
 
 var result = add(10, 20);

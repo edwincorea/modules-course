@@ -15,8 +15,8 @@ console.log("From Calc!!!");
 
 exports.add =  function(left, right){
     return left + right;
-}         
+};         
 
 exports.sub =  function(left, right){
     return left - right;
-}         
+};        

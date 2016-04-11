@@ -1,0 +1,1 @@
+{"version":3,"sources":["utility.js"],"names":[],"mappings":";;;;;;IAAM;;;;;;;gCACK;AACH,mBAAO,QAAP,CADG;;;;WADL","file":"utility.js","sourcesContent":["class Thing{\r\n    Thang(){\r\n        return \"Thung!\";\r\n    }\r\n}"],"sourceRoot":"/source/"}
