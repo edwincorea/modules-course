@@ -1,4 +1,4 @@
-var gulp = require("gulp")
+var gulp = require("gulp"),
     $ = require("gulp-load-plugins")();
     
 gulp.task("dev:scripts", () => {
@@ -17,7 +17,7 @@ gulp.task("dev:styles", () => {
 
 gulp.task("dev", gulp.parallel("dev:scripts", "dev:styles"));
 
-gulp.task("watch", gulp.series(
+gulp.task("dev:watch", gulp.series(
     "dev",
     () => {
         gulp.watch("./src/styles/**/*.less", gulp.series("dev:styles"));
