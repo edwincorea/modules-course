@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample App</title>
+        <link rel="stylesheet" href="/styles/site.css">
+        <link rel="stylesheet" href="/lib/jquery-ui/themes/ui-darkness/jquery-ui.css">
+    </head>
+    <body>
+        <div id="mount">
+            Loading...
+        </div>
+        <script src="/lib/requirejs/require.js"></script>
+        <script src="/config.js"></script>
+        <script>
+            //entry point module: /public/scripts/application.js
+            requirejs(["application"]); 
+        </script>
+    </body>
+</html>
