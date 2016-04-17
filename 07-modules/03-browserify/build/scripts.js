@@ -72,4 +72,4 @@ function createBundler(isDebug) {
     return bundler;
 }
 
-exports.createBundler = createBundler;
+module.exports.createBundler = createBundler;
