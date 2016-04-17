@@ -9,11 +9,33 @@
         <div id="mount">
             Loading...
         </div>
+        <!-- Prod -->
         <script src="/lib/requirejs/require.js"></script>
-        <script src="/config.js"></script>
+        <script src="/build/_vendor.js"></script>
+        <script src="/build/application.js"></script>
+        <script>
+            requirejs(["application"]);            
+        </script>
+        
+        <!-- Dev -->
+        <!--
+        <script src="/lib/requirejs/require.js"></script>
+        <script src="/config.js"></script>>
         <script>
             //entry point module: /public/scripts/application.js
             requirejs(["application"]); 
+            // Bad Module
+            requirejs(["bad"], function(bad){
+                console.log(bad);
+                bad.func1();
+                bad.func2();
+            });
+
+            //Bad plugin
+            requirejs(["bad-plugin", "jquery"], function($){
+                $("body").bad();
+            });            
         </script>
+        -->        
     </body>
 </html>

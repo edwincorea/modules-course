@@ -14,7 +14,7 @@ gulp.task("dev:watch", gulp.series(
         //add live reload capabilities using gulp-livereload and Chrome livereload extension
         $.livereload.listen(); //start livereload server
         
-        gulp.watch("./src/styles/**/*.less", gulp.series("dev:styles"));
+        gulp.watch("./src/styles/**/*.{less,css}", gulp.series("dev:styles"));
         gulp.watch("./src/scripts/**/*.js", gulp.series("dev:scripts"));
     }    
 ));

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample App</title>
+        <link rel="stylesheet" href="/styles/site.css">
+    </head>
+    <body>
+        <h1>Contact</h1>
+        <!-- Prod -->
+        <!--
+        <script src="/lib/requirejs/require.js"></script>
+        <script src="/build/_vendor.js"></script>
+        <script src="/build/contact.js"></script>
+        <script>
+            requirejs(["contact"]);            
+        </script>
+        -->
+        
+        <!-- Dev -->
+        <script src="/lib/requirejs/require.js"></script>
+        <script src="/config.js"></script>
+        <script>
+            requirejs(["contact"]); 
+        </script>  
+    </body>
+</html>

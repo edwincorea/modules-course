@@ -1,0 +1,1 @@
+function func1(){$("<p>Hi 1!</p>").appendTo($("body"))}function func2(){$("<p>Hi 2!</p>").appendTo($("body"))}define("bad",["jquery","lodash"],function(n){return function(){var u,f;return f=function(n,u){return{func1:this.func1,func2:this.func2}},u=f.apply(n,arguments)}}(this));

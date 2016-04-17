@@ -4,8 +4,8 @@ var gulp = require("gulp"),
 
 gulp.task("dev:styles", () => {
     return gulp
-        .src("./src/styles/site.less")
+        .src(config.styles.dev.src)
         .pipe($.less())
-        .pipe(gulp.dest("./public/styles"))
+        .pipe(gulp.dest(config.styles.dev.dest))
         .pipe($.livereload());
 });

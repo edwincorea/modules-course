@@ -1,0 +1,1 @@
+$.fn.bad=function(){return this.html("Bad plugin, no AMD :("),this},define("bad-plugin",["jquery"],function(n){return function(){var t;return t||n.$}}(this));
