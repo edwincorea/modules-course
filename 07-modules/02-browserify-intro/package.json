@@ -1,0 +1,17 @@
+{
+  "name": "02-browserify-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "application.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "lodash": "^4.11.1"
+  }
+}

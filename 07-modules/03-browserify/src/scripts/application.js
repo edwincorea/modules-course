@@ -1,7 +1,9 @@
+import "jquery-ui/themes/ui-darkness/jquery-ui.css"
+
 import {UsersStore} from "./models/users-store"; //import a specific class from users-store module 
-import UsersController from "./controllers/users-controller"; //import a default function from users-controller module
+import usersController from "./controllers/users-controller"; //import a default function from users-controller module
 import * as util from "./lib/util"; //import everything from util module
-//import "./script"; //import a single script
+import "./script"; //import a single script
 import $ from "jquery";
 
 //https://developer.mozilla.org/en/docs/web/javascript/reference/statements/import
@@ -11,9 +13,10 @@ console.log("Loading application");
 
 const store = new UsersStore();
 const $mount = $("#mount");
-UsersController($mount, store);
+usersController($mount, store);
 
-//UsersController();
+//usersController();
 //util.func1();
 //util.func2();
 
+//console.log("Moi!!! Yay! Hei! :)");

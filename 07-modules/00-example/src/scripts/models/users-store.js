@@ -1,10 +1,10 @@
 import _ from "lodash";
-import {user} from "./user";
+import {User} from "./user";
 
 //private fields
 const _users = Symbol("users");
 
-export class UserStore{
+export class UsersStore{
     //public properties
     get users() { return this[_users].slice(); }
     
