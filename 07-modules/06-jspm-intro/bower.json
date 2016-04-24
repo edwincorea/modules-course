@@ -1,0 +1,17 @@
+{
+  "name": "06-jspm-intro",
+  "homepage": "https://github.com/edwincorea/modules-course",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "system.js": "^0.19.26"
+  }
+}

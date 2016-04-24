@@ -5,3 +5,4 @@ components
 vendor
 *.log
 assets
+jspm_packages
