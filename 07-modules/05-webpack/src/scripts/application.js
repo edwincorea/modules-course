@@ -20,3 +20,5 @@ usersController($mount, store);
 util.func1();
 util.func2();
 
+console.log(`We are now running in ${env}`);
+

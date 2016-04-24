@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Sample App</title>
+        <link rel="stylesheet" href="/assets/application.css">
     </head>
     <body>
         <div id="mount">
@@ -11,10 +12,17 @@
             <div class="row">
                 <button class="btn btn-default btn-small">
                     A button!
-                    <i class="glyphicon glyphicon-glass"></i>
+                    <span class="glyphicon glyphicon-glass"></span>
                 </button>
             </div>
         </div>
-        <script src="http://localhost:8081/application.js"></script>
+        <!--For using webpack-dev-server-->
+        <!--
+            <script src="http://localhost:8081/vendor.js"></script>
+            <script src="http://localhost:8081/application.js"></script>
+        -->
+        
+            <script src="/assets/vendor.js"></script>
+            <script src="/assets/application.js"></script>        
     </body>
 </html>

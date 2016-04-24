@@ -1,10 +1,12 @@
-var path = require("path");
-
+var path = require("path"),
+    webpack = require("webpack");
+    
 function config(){
     return {
         entry: {
             application: "./src/scripts/application",
-            contact: "./src/scripts/contact"
+            contact: "./src/scripts/contact",
+            vendor: ["jquery", "jquery-ui", "lodash"]
         },
         output: {
             path: path.join(__dirname, "public/assets"),
@@ -18,7 +20,11 @@ function config(){
                 { test: /\.css/, loader: "style!css" },
                 { test: /\.(png|jpg|jpeg|gif|woff|ttf|eot|svg)/, loader: "url-loader?limit=5000" } //if less than 1Kb, inline it as Base64, otherwise as external resource 
             ]
-        }
+        },
+        plugins: [
+            //code splitting: vendor code will be placed in vendor.js for better caching of resources
+            new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.js")
+        ]
     };
 }
 
